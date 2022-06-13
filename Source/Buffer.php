@@ -38,6 +38,8 @@ declare(strict_types=1);
 
 namespace Hoa\Iterator;
 
+use Iterator;
+
 /**
  * Class \Hoa\Iterator\Buffer.
  *
@@ -87,7 +89,7 @@ class Buffer extends IteratorIterator implements Outer
     /**
      * Get inner iterator.
      */
-    public function getInnerIterator(): iterable
+    public function getInnerIterator(): ?Iterator
     {
         return $this->_iterator;
     }
