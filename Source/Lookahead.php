@@ -38,6 +38,8 @@ declare(strict_types=1);
 
 namespace Hoa\Iterator;
 
+use Iterator;
+
 /**
  * Class \Hoa\Iterator\Lookahead.
  *
@@ -80,7 +82,7 @@ class Lookahead extends IteratorIterator implements Outer
     /**
      * Get inner iterator.
      */
-    public function getInnerIterator(): iterable
+    public function getInnerIterator(): ?Iterator
     {
         return $this->_iterator;
     }
@@ -96,7 +98,7 @@ class Lookahead extends IteratorIterator implements Outer
     /**
      * Return the key of the current element.
      */
-    public function key()
+    public function key(): mixed
     {
         return $this->_key;
     }
