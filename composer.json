@@ -1,5 +1,5 @@
 {
-    "name"       : "hiqdev/hoa-iterator",
+    "name"       : "xdimedrolx/hoa-iterator",
     "description": "The Hiqdev Hoa\\Compiler library.",
     "type"       : "library",
     "keywords"   : ["library", "iterator"],
