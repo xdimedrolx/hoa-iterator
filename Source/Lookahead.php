@@ -90,7 +90,7 @@ class Lookahead extends IteratorIterator implements Outer
     /**
      * Return the current element.
      */
-    public function current()
+    public function current(): mixed
     {
         return $this->_current;
     }

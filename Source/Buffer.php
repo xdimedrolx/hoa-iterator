@@ -113,7 +113,7 @@ class Buffer extends IteratorIterator implements Outer
     /**
      * Return the current element.
      */
-    public function current()
+    public function current(): mixed
     {
         return $this->getBuffer()->current()[self::BUFFER_VALUE];
     }
@@ -121,7 +121,7 @@ class Buffer extends IteratorIterator implements Outer
     /**
      * Return the key of the current element.
      */
-    public function key()
+    public function key(): mixed
     {
         return $this->getBuffer()->current()[self::BUFFER_KEY];
     }
