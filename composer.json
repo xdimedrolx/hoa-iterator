@@ -5,7 +5,7 @@
     "keywords"   : ["library", "iterator"],
     "license"    : "BSD-3-Clause",
     "require": {
-        "php" : ">=7.4",
+        "php" : ">=8.0",
         "hoa/consistency": "~1.0",
         "hoa/exception"  : "~1.0"
     },
